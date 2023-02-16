@@ -16,6 +16,7 @@
     background-color: #49cc90;
     content:"POST";
     mask-image: none;
+    -webkit-mask-image: none;
     display: inline-block;
     width: auto;
     height: auto;
