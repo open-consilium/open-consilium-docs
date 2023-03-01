@@ -64,7 +64,7 @@ erDiagram
 
 ## 0.1
 
-```mermaid
+```mermaid 
 erDiagram
     AppUser {
         string firstname
@@ -88,7 +88,7 @@ erDiagram
         string name
     }
     Status ||--o{ Item : ""
-
+    Status }o--|| Project : ""
 
 
     Project {
@@ -103,7 +103,7 @@ erDiagram
     }
 
     Item }o--|| Milestone : ""
-
+    Milestone }o--|| Project : ""
 
     Event {
         string name
@@ -122,4 +122,5 @@ erDiagram
 
     Project_Role }o--|| Project : ""
     Project_Role }o--o{ AppUser : ""
+
 ```
