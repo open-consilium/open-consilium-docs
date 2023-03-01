@@ -1,0 +1,38 @@
+:root {
+    --md-admonition-icon--api-post: none;
+}
+.md-typeset .admonition.api-post,
+.md-typeset details.api-post {
+    border-color: rgb(43, 155, 70);
+}
+.md-typeset .api-post > .admonition-title,
+.md-typeset .api-post > summary {
+    background-color: rgba(43, 155, 70, 0.1);
+    padding-left: 1rem;
+    font-weight: normal;
+}
+
+.api-post > summary::before {
+    background-color: #49cc90;
+    content:"POST";
+    mask-image: none;
+    -webkit-mask-image: none;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    position: static;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+.api-post > summary::after {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transform-origin: center;
+}
+
